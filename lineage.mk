@@ -2,11 +2,15 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
+BOARD_HAS_THERMAPLAN := true
+THERMAPLAN_DISABLE_CPR_REGULATOR := true
+
 # Inherit some common stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
+$(call inherit-product, device/thermaplan-btm/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_angler
