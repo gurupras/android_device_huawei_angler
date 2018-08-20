@@ -11,6 +11,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 $(call inherit-product, device/thermaplan-btm/device.mk)
+$(call inherit-product, device/huawei/angler/thermaplan.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_angler
