@@ -3,7 +3,6 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 BOARD_HAS_THERMAPLAN := true
-THERMAPLAN_DISABLE_CPR_REGULATOR := true
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
